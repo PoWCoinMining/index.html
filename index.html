@@ -1,0 +1,29 @@
+Конечно, вот пример простого HTML кода для создания страницы, где будет отображаться рандомное значение (проценты) при обновлении:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Рандомное значение процентов</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+    }
+    h1 {
+        color: navy;
+    }
+</style>
+</head>
+<body>
+    <h1>% <span id="randomValue"></span>%</h1>
+
+    <script>
+        document.getElementById('randomValue').innerText = Math.floor(Math.random() * 100);
+    </script>
+</body>
+</html>
+
+При каждом обновлении страницы, будет генерироваться новое случайное значение от 0 до 100 и отображаться на странице.
